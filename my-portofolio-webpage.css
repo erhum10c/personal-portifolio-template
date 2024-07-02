@@ -1,0 +1,147 @@
+:root {
+  --light-blue: #b5b5e1;
+  --gray: rgb(55, 51, 51);
+  --light-pink: rgba(247, 111, 247, 0.837);
+}
+
+body {
+  background-color: rgb(23, 23, 65);
+  
+}
+#navbar {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 0;
+  justify-content: flex-end;
+}
+#navbar li {
+  list-style: none;
+  display: inline;
+}
+#navbar a {
+  text-decoration: none;
+  color: var(--light-blue);
+  display: inline-block;
+  padding-bottom: 10px;
+  padding: 3px 0 14px 14px;
+  font-family: cursive;
+  font-size: 18px;
+  border-radius: 2px;
+}
+#navbar a:hover {
+  cursor: pointer;
+  padding-right: 2vh;
+  transition: 0.1s;
+  color: var(--light-pink);
+  margin: 2px;
+}
+#welcome-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(55, 51, 51);
+  color: var(--light-blue);
+  margin-right: 10px;
+  padding: 0 2vh 0;
+  
+}
+#welcome-section h1 {
+  font-size: 7vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color:rgb(65, 65, 127);
+  margin-bottom: 0;
+}
+#welcome-section h2 {
+  font-size: 4vh;
+  margin-top: 0;
+  margin-bottom: 2vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#welcome-section p {
+  font-size: 3vh;
+  margin-top: 0;
+  color: var(--light-pink);
+  padding-right: 1vh;
+}
+#projects {
+  background-color: rgb(23, 23, 65);
+  padding: 1vh;
+  height: 100vh;
+  
+}
+#projects h2 {
+ color: var(--light-blue);
+ margin-bottom: 3vh;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ font-size: 4vh;
+ margin-left: 2vh;
+}
+.project-tile {
+  margin: 1vh;
+ display: block;
+ object-fit: cover;
+ 
+}
+.p {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#contact {
+  background-color: black;
+  padding-top: 1vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  }
+
+
+  .contact {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#contact h1 {
+  color: wheat;
+  text-align: center;
+  font-family: cursive;
+  font-size: 5vh;
+  padding-top: 10px;
+}
+.IG {
+  width: 10vw; 
+}
+.YB {
+  width: 10vw;
+  height: 10vw;
+}
+.FB {
+  width: 10vw;
+}
+/*should have one media query*/
+@media (max-width: 500px) {
+ #navbar {
+  background-color: var(--light-pink);
+ }
+ #navbar a {
+  color:rgb(23, 23, 65);
+ }
+ #navbar a:hover {
+  color: black;
+ }
+}
+/*Heightofwelcome=height of viewport*/
+/*navbar at the top of the viewport*/
